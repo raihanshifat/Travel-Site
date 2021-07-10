@@ -151,9 +151,9 @@ nav{
 
 label.logo{
     color:white;
-    font-size:35px;
+    font-size:20px;
     line-height:80px;
-    padding: 0 100px;
+    padding: 0 20px;
     font-weight: bold;
 }
 nav ul{
@@ -180,7 +180,7 @@ nav ul li a{
  }
 
 .checkbtn{
-    font-size: 30px;
+    font-size: 10px;
     color:black;
     float: right;
     line-height: 80px;
@@ -199,7 +199,7 @@ nav ul li a{
     }
     ul{
         position: fixed;
-        width:100%;
+        width:auto;
         height:auto;
         background-color: #325D6A;
         top:80px;
