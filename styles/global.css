@@ -1,0 +1,225 @@
+.tm-container-outer {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-bottom:100px;
+        
+}
+.widget-section{
+    background-color:#F4F4F4;
+}
+
+
+.tm-slideshow-section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.tm-slideshow-section-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
+.tm-slideshow { width: 50%; }
+
+.tm-slideshow-description {
+    padding: 50px;
+    color: white;
+    width: 48%;
+    z-index: 100;
+    margin-left: -42px;
+}
+
+.tm-slideshow-description-left {
+    margin-left: auto;
+    margin-right: -42px;    
+}
+@media screen and (max-width: 986px) {
+    .tm-slideshow-section { flex-direction: column; }
+    
+    .tm-slideshow,
+    .tm-slideshow-description {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    .tm-slideshow-description {        
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+.tm-bg-primary { background: #325D6A; }
+.tm-bg-highlight { background:#325D6A; }
+
+
+@media screen and (max-width: 1033px) {
+    .tm-slideshow-description { width: 55%; }
+}
+.tm-slideshow-highlight .slick-prev:hover, 
+.tm-slideshow-highlight .slick-next:hover {
+    background: #c66995;
+}
+
+.tm-right {
+    display: inline-block;
+    float: right;
+}
+
+.tm-right .slick-next {
+    right: auto;
+    left: 94px;
+}
+
+.tm-right .slick-prev {
+    left: 42px;
+    right: auto;
+}
+
+.tm-btn-white { background: white; }
+.tm-btn-white-primary { color: #69c6ba; }
+.tm-btn-white-highlight { color: #c66995; }
+
+.tm-btn-white-primary:hover,
+.tm-btn-white-primary:focus,
+.tm-btn-white-primary:active {
+    background: #c66995;
+    color: white;
+}
+
+.tm-btn-white-highlight:hover,
+.tm-btn-white-highlight:focus,
+.tm-btn-white-highlight:active {
+    background: #69c6ba;
+    color: white;
+}
+
+
+.tm-btn {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 400;  
+    padding: 12px 20px;
+}
+
+footer {
+    display: flex;
+    padding: 30px 100px 30px 0px;
+    border-top: 1px solid #ddd;
+    background-color: black;
+    overflow-x: hidden;
+  }
+
+  footer p{
+    text-align: center;
+    font-size: 15px;
+    color: #aaaaaa;
+  }
+
+  footer h4{
+    text-align: center;
+    font-size: 20px;
+    color: #aaaa;
+  }
+  body{
+    overflow-x: hidden;
+}
+.carousel
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.sr-only
+{
+    visibility: hidden;
+}
+
+nav{
+    background-color:#325D6A;
+    height:80px;
+    width:100%;
+}
+
+label.logo{
+    color:white;
+    font-size:35px;
+    line-height:80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+nav ul{
+    float:right;
+    margin-right:20px ;
+
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin:0 5px;
+}
+
+nav ul li a{
+    color:white;
+    font-size: 20px;
+    padding: 20px 25px;
+    border-radius: 5px ;
+}
+
+ a.active,a:hover{
+     background-color:#D4AF37;
+     transition: .5s;
+ }
+
+.checkbtn{
+    font-size: 30px;
+    color:black;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width:1024px)
+{
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width:100%;
+        height:auto;
+        background-color: #325D6A;
+        top:80px;
+        left:-100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color:#D4AF37;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}

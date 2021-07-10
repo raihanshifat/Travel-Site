@@ -1,4 +1,10 @@
-import '../styles/globals.css'
+import '../styles/global.css'
+import '../styles/tooplate-style.css'
+
+
+import '../styles/bootstrap.min.css';
+
+
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />
